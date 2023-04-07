@@ -1,3 +1,4 @@
+
 function gameObject() {
     const nbagame = {
       home: {
@@ -127,10 +128,47 @@ function gameObject() {
   }
 
   function homeTeamName() {
-    let object = gameObject()
-    return object['home']['teamName']
+    let object = gameObject();
+    return object['home']['teamName'];
   }
   console.log(homeTeamName())
+
+function numPointsScored(player) {
+    let object = gameObject();
+    if (object === player) {
+        return object['home']['teamName'];
+    } else {
+    //return object.filter(function (object) { return object.toLowerCase() === player.toLowerCase() })
+    console.log("not found")
+    }
+}
+console.log(numPointsScored("Ben Gordon"))
+
+ function  playerNumbers(){
+    let object = gameObject();
+ }
+
+
+ function mostPointsScored() {
+    let object = gameObject();
+ }
+
+
+ function playerWithLongestName() {
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
